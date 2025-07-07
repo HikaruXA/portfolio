@@ -119,94 +119,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* Certificate Section */}
-      <div className="py-8 md:py-16 flex items-center justify-center px-4">
-        <div className="max-w-6xl w-full">
-          <div className="flex items-center justify-between mb-8 flex-col md:flex-row gap-6 md:gap-8">
-            <div className="flex-1 text-center md:text-left">
-              <div className="mb-4 md:mb-6">
-                <h2 className="text-[#28009E] font-bold text-2xl sm:text-3xl md:text-[39.81px] leading-tight mb-2 md:mb-4">
-                  Certificates
-                </h2>
-                <p className="text-gray-700 text-sm sm:text-base md:text-lg mb-4 md:mb-6">
-                  A collection of certifications that show my dedication to
-                  learning and expanding my capabilities.
-                </p>
-              </div>
 
-              <div className="mb-4 md:mb-6">
-                <h3 className="text-gray-800 font-semibold text-lg sm:text-xl mb-3 md:mb-4">
-                  Certifications Earned:
-                </h3>
-                <div className="space-y-2 md:space-y-3 text-gray-700 text-sm sm:text-base">
-                  <div className="flex items-start text-left">
-                    <span className="text-[#28009E] font-bold mr-2 flex-shrink-0">
-                      1.
-                    </span>
-                    <span>
-                      <strong>IT Specialist: HTML and CSS</strong> - Certiport
-                    </span>
-                  </div>
-                  <div className="flex items-start text-left">
-                    <span className="text-[#28009E] font-bold mr-2 flex-shrink-0">
-                      2.
-                    </span>
-                    <span>
-                      <strong>IT Specialist: Databases</strong> - Certiport
-                    </span>
-                  </div>
-                  <div className="flex items-start text-left">
-                    <span className="text-[#28009E] font-bold mr-2 flex-shrink-0">
-                      3.
-                    </span>
-                    <span>
-                      <strong>IT Specialist: Network Security</strong> -
-                      Certiport
-                    </span>
-                  </div>
-                  <div className="flex items-start text-left">
-                    <span className="text-[#28009E] font-bold mr-2 flex-shrink-0">
-                      4.
-                    </span>
-                    <span>
-                      <strong>IT Specialist: Cybersecurity</strong> - Certiport
-                    </span>
-                  </div>
-                  <div className="flex items-start text-left">
-                    <span className="text-[#28009E] font-bold mr-2 flex-shrink-0">
-                      5.
-                    </span>
-                    <span>
-                      <strong>
-                        Certificate of Completion, Computer Ethics
-                      </strong>{" "}
-                      - University of Mindanao
-                    </span>
-                  </div>
-                  <div className="flex items-start text-left">
-                    <span className="text-[#28009E] font-bold mr-2 flex-shrink-0">
-                      6.
-                    </span>
-                    <span>
-                      <strong>
-                        Certificate of Completion, ReactJS Workshop
-                      </strong>{" "}
-                      - University of Mindanao
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex-shrink-0 ml-0 md:ml-8 mt-4 md:mt-0">
-              <img
-                src={CertificateImage}
-                alt="Certificate illustration"
-                className="w-60 h-48 sm:w-72 sm:h-56 md:w-80 md:h-64 object-contain mx-auto"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
       {/* Tech Stack */}
       <div className="py-8 md:py-16 flex items-center justify-center px-4">
         <div className="max-w-6xl w-full">
@@ -311,7 +224,94 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* Certificate Section */}
+      <div className="py-8 md:py-16 flex items-center justify-center px-4">
+        <div className="max-w-6xl w-full">
+          <div className="flex items-center justify-between mb-8 flex-col md:flex-row gap-6 md:gap-8">
+            <div className="flex-1 text-center md:text-left">
+              <div className="mb-4 md:mb-6">
+                <h2 className="text-[#28009E] font-bold text-2xl sm:text-3xl md:text-[39.81px] leading-tight mb-2 md:mb-4">
+                  Certificates
+                </h2>
+                <p className="text-gray-700 text-sm sm:text-base md:text-lg mb-4 md:mb-6">
+                  A collection of certifications that show my dedication to
+                  learning and expanding my capabilities.
+                </p>
+              </div>
 
+              <div className="mb-4 md:mb-6">
+                <h3 className="text-gray-800 font-semibold text-lg sm:text-xl mb-3 md:mb-4">
+                  Certifications Earned:
+                </h3>
+                <div className="space-y-2 md:space-y-3 text-gray-700 text-sm sm:text-base">
+                  <div className="flex items-start text-left">
+                    <span className="text-[#28009E] font-bold mr-2 flex-shrink-0">
+                      1.
+                    </span>
+                    <span>
+                      <strong>IT Specialist: HTML and CSS</strong> - Certiport
+                    </span>
+                  </div>
+                  <div className="flex items-start text-left">
+                    <span className="text-[#28009E] font-bold mr-2 flex-shrink-0">
+                      2.
+                    </span>
+                    <span>
+                      <strong>IT Specialist: Databases</strong> - Certiport
+                    </span>
+                  </div>
+                  <div className="flex items-start text-left">
+                    <span className="text-[#28009E] font-bold mr-2 flex-shrink-0">
+                      3.
+                    </span>
+                    <span>
+                      <strong>IT Specialist: Network Security</strong> -
+                      Certiport
+                    </span>
+                  </div>
+                  <div className="flex items-start text-left">
+                    <span className="text-[#28009E] font-bold mr-2 flex-shrink-0">
+                      4.
+                    </span>
+                    <span>
+                      <strong>IT Specialist: Cybersecurity</strong> - Certiport
+                    </span>
+                  </div>
+                  <div className="flex items-start text-left">
+                    <span className="text-[#28009E] font-bold mr-2 flex-shrink-0">
+                      5.
+                    </span>
+                    <span>
+                      <strong>
+                        Certificate of Completion, Computer Ethics
+                      </strong>{" "}
+                      - University of Mindanao
+                    </span>
+                  </div>
+                  <div className="flex items-start text-left">
+                    <span className="text-[#28009E] font-bold mr-2 flex-shrink-0">
+                      6.
+                    </span>
+                    <span>
+                      <strong>
+                        Certificate of Completion, ReactJS Workshop
+                      </strong>{" "}
+                      - University of Mindanao
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex-shrink-0 ml-0 md:ml-8 mt-4 md:mt-0">
+              <img
+                src={CertificateImage}
+                alt="Certificate illustration"
+                className="w-60 h-48 sm:w-72 sm:h-56 md:w-80 md:h-64 object-contain mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       {/* Soft Skills */}
       <div className="py-8 md:py-16 flex items-center justify-center px-4">
         <div className="max-w-6xl w-full">
