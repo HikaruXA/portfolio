@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactImage from "../assets/contactv2.jpg";
 
 const Contact = () => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText("rfcwprupose@gmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <div className="py-8 md:py-16 flex items-center justify-center mt-8 md:mt-16 px-4">
       <div className="max-w-6xl w-full">
@@ -16,15 +24,40 @@ const Contact = () => {
               </h2>
             </div>
             <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-4 max-w-none md:max-w-lg">
-              You can contact me at rfcwprupose@gmail.com, or through any of the
-              platforms listed below.
+              You can contact me at{" "}
+              <button
+                onClick={handleCopyEmail}
+                className="text-[#28009E] font-medium hover:underline focus:underline transition-all duration-200 cursor-pointer bg-transparent border-none p-0 relative"
+                title="Click to copy email"
+              >
+                rfcwprupose@gmail.com
+                {copied && (
+                  <span className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded shadow-lg">
+                    Copied!
+                  </span>
+                )}
+              </button>
+              , or through any of the platforms listed below.
             </p>
             <div className="flex gap-4 justify-center md:justify-start">
+              <a
+                href="mailto:rfcwprupose@gmail.com"
+                className="w-10 h-10 sm:w-12 sm:h-12 bg-[#28009E] rounded-lg flex items-center justify-center hover:bg-[#1f0075] transition-colors duration-200 hover:shadow-lg transform hover:scale-105"
+                title="Send Email"
+              >
+                <svg
+                  className="w-5 h-5 sm:w-6 sm:h-6 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+              </a>
               <a
                 href="https://www.linkedin.com/in/rome-francis-cabangal-779785348/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-700 rounded-lg flex items-center justify-center hover:bg-blue-800 transition-colors duration-200 hover:shadow-lg transform hover:scale-105"
+                className="w-10 h-10 sm:w-12 sm:h-12 bg-[#28009E] rounded-lg flex items-center justify-center hover:bg-[#1f0075] transition-colors duration-200 hover:shadow-lg transform hover:scale-105"
               >
                 <svg
                   className="w-5 h-5 sm:w-6 sm:h-6 text-white"
@@ -38,7 +71,7 @@ const Contact = () => {
                 href="https://www.facebook.com/romefrancis.cabangal.58/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors duration-200 hover:shadow-lg transform hover:scale-105"
+                className="w-10 h-10 sm:w-12 sm:h-12 bg-[#28009E] rounded-lg flex items-center justify-center hover:bg-[#1f0075] transition-colors duration-200 hover:shadow-lg transform hover:scale-105"
               >
                 <svg
                   className="w-5 h-5 sm:w-6 sm:h-6 text-white"

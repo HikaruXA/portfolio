@@ -30,6 +30,13 @@ const Home = () => {
               >
                 Contact Me
               </Link>
+              <a
+                href="/Resume.pdf"
+                download
+                className="ml-4 inline-block bg-white border border-gray-400 text-gray-800 px-4 py-2 sm:px-6 sm:py-3 rounded text-sm sm:text-base hover:bg-gray-100 hover:shadow-lg transform hover:scale-105 transition-all duration-200"
+              >
+                Download Resume
+              </a>
             </div>
             <div className="flex-shrink-0 ml-0 md:ml-8 mt-4 md:mt-0 transform scale-100 sm:scale-125 md:scale-150">
               <img

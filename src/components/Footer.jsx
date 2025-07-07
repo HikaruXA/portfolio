@@ -16,6 +16,14 @@ const Footer = () => {
           </p>
           <div className="flex gap-4 sm:gap-6 mt-4 sm:mt-6 text-2xl sm:text-3xl justify-center md:justify-start">
             <a
+              href="mailto:rfcwprupose@gmail.com"
+              aria-label="Email"
+              className="hover:text-red-300 transition-colors duration-200"
+              title="Send Email"
+            >
+              <FaEnvelope />
+            </a>
+            <a
               href="https://www.linkedin.com/in/rome-francis-cabangal-779785348/"
               target="_blank"
               rel="noopener noreferrer"
