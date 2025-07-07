@@ -86,6 +86,14 @@ const Footer = () => {
                 Blogs
               </Link>
             </li>
+            <li>
+              <Link
+                to="/graduation"
+                className="hover:underline hover:text-blue-300 transition-colors duration-200"
+              >
+                Graduation
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
