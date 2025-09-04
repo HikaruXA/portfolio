@@ -5,7 +5,6 @@ const Footer = () => {
   return (
     <footer className="bg-[#28009E] text-white py-8 md:py-16 px-4">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-        {/* Column 1: Name & Socials */}
         <div className="text-center md:text-left">
           <h2 className="font-bold text-lg sm:text-xl md:text-2xl">
             Rome Francis C. Cabangal
@@ -44,7 +43,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Column 2: Availability */}
         <div className="text-center md:text-left">
           <h2 className="font-bold text-lg sm:text-xl md:text-2xl">
             Availability
@@ -56,7 +54,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Column 3: Quick Links */}
         <div className="text-center md:text-left">
           <h2 className="font-bold text-lg sm:text-xl md:text-2xl">
             Quick Links
@@ -106,7 +103,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer bottom */}
       <div className="text-center text-xs sm:text-sm mt-6 sm:mt-8 md:mt-12 pt-6 sm:pt-8 border-t border-blue-400 border-opacity-30">
         © 2025 Rome Francis C. Cabangal. All rights reserved.
       </div>

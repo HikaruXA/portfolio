@@ -1,5 +1,5 @@
 import React from "react";
-import MaintenanceImage from "../assets/maintenance.jpg"; // Adjust the path as necessary
+import MaintenanceImage from "../assets/maintenance.jpg";
 
 const Blogs = () => {
   return (

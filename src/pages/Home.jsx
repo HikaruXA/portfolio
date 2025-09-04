@@ -1,8 +1,8 @@
 import React from "react";
-import IntroductionImage from "../assets/introduction.jpg"; // Adjust the path as necessary
-import InternshipImage from "../assets/internship.jpg"; // Adjust the path as necessary
-import CertificateImage from "../assets/certificate.jpg"; // Adjust the path as necessary
-import { Link } from "react-router-dom"; // Ensure you have react-router-dom installed
+import IntroductionImage from "../assets/introduction.jpg";
+import InternshipImage from "../assets/internship.jpg";
+import CertificateImage from "../assets/certificate.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (

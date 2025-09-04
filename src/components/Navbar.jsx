@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="bg-[#28009E] text-white py-4 px-4 sm:px-6 shadow">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <div className="text-sm sm:text-base font-bold">RomeFC</div>
-        {/* Mobile Menu Button */}
+
         <button
           onClick={toggleMenu}
           className="md:hidden flex flex-col space-y-1 p-2"
@@ -38,7 +38,7 @@ const Navbar = () => {
             }`}
           ></span>
         </button>
-        {/* Desktop Navigation Links */}
+
         <ul className="hidden md:flex gap-6 text-sm">
           {["home", "contact", "projects", "blogs", "graduation"].map(
             (item) => (
@@ -61,7 +61,6 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
           isMenuOpen ? "max-h-96 opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"

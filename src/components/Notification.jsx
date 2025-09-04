@@ -4,7 +4,7 @@ import confetti from "canvas-confetti";
 import victorySound from "../assets/victory.mp3";
 
 const Notification = () => {
-  const [isOpen, setIsOpen] = useState(false); // initially hidden
+  const [isOpen, setIsOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
   const audioRef = useRef(null);
@@ -33,7 +33,6 @@ const Notification = () => {
         });
       }
 
-      // Confetti rain
       interval = setInterval(() => {
         confetti({
           particleCount: 5,
