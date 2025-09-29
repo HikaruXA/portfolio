@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import ProjectImage from "../assets/projects.jpg";
 import PrototypeAficionadoImage from "../assets/aficionado.png";
 import PrototypeExpensesTrackerImage from "../assets/expenses.png";
@@ -6,7 +8,11 @@ import PrototypeMusicPlaylistImage from "../assets/music.png";
 import WebsiteBeeHonestImage from "../assets/beehonest.png";
 import WebsiteExpensesTrackerImage from "../assets/expenses-web.png";
 import WebsiteValentineProjectImage from "../assets/valentine.png";
-import { Link } from "react-router-dom";
+
+// Live websites
+import WebsiteJsonCashier from "../assets/jsoncashier.png";
+import WebsiteSuggestDavao from "../assets/suggestdavao.png";
+import WebsiteUniversityMemories from "../assets/universitymemories.png";
 
 const Projects = () => {
   return (
@@ -43,6 +49,66 @@ const Projects = () => {
               alt="Project illustration"
               className="w-60 h-48 sm:w-72 sm:h-56 md:w-80 md:h-64 object-contain mx-auto"
             />
+          </div>
+        </div>
+
+        {/* Live Websites Section */}
+        <div className="mb-16">
+          <h3 className="text-xl md:text-2xl font-bold text-[#28009E] mb-6">
+            Live Websites
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                title: "University Memories",
+                tagline: "Cherishing the Past, Embracing a New Journey",
+                desc: "A personal archive of moments from the University of Mindanao — emotional, reflective, and meaningful.",
+                img: WebsiteUniversityMemories,
+                link: "https://romefc-memories-um.netlify.app/",
+              },
+              {
+                title: "JsonCashier",
+                tagline: "Zero Setup. Zero Sync. Zero Worries.",
+                desc: "A lightweight, JSON-based POS system that runs entirely in your browser — no servers, no logins.",
+                img: WebsiteJsonCashier,
+                link: "https://jsoncashier.netlify.app/",
+              },
+              {
+                title: "SuggestDavao",
+                tagline: "Davao Needs Your Ideas",
+                desc: "A platform for anonymously sharing suggestions to help improve Davao City.",
+                img: WebsiteSuggestDavao,
+                link: "https://romefc-suggestdavao.netlify.app/",
+              },
+            ].map((site, i) => (
+              <div
+                key={i}
+                className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col justify-between"
+              >
+                <img
+                  src={site.img}
+                  alt={site.title}
+                  className="w-full h-40 object-cover"
+                />
+                <div className="p-4 flex flex-col flex-grow">
+                  <h4 className="font-semibold text-lg text-[#28009E]">
+                    {site.title}
+                  </h4>
+                  <p className="text-sm text-gray-700 italic mb-1">
+                    {site.tagline}
+                  </p>
+                  <p className="text-sm text-gray-600 flex-grow">{site.desc}</p>
+                  <a
+                    href={site.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-block bg-[#28009E] text-white px-4 py-2 rounded text-sm hover:bg-[#1e007a] transition-colors duration-200 hover:shadow-lg transform hover:scale-105 text-center"
+                  >
+                    Visit Site
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -98,17 +164,17 @@ const Projects = () => {
               {[
                 {
                   title: "BeeHonest",
-                  desc: "Develop the front-end and the back-end of the website.",
+                  desc: "Developed the front-end and the back-end of the website.",
                   img: WebsiteBeeHonestImage,
                 },
                 {
                   title: "Expenses Tracker",
-                  desc: "Develop the landing page of the expenses tracker.",
+                  desc: "Developed the landing page of the expenses tracker.",
                   img: WebsiteExpensesTrackerImage,
                 },
                 {
                   title: "Valentine Project",
-                  desc: "Develop a fun website that invites someone to be their valentine.",
+                  desc: "Created a fun website inviting someone to be their valentine.",
                   img: WebsiteValentineProjectImage,
                 },
               ].map((project, i) => (
