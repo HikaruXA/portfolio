@@ -218,6 +218,28 @@ const Home = () => {
               </p>
             </div>
 
+            {/* TypeScript */}
+            <div className="bg-white p-4 sm:p-5 md:p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+              <h3 className="text-gray-800 font-bold text-base sm:text-lg mb-2 sm:mb-3">
+                TypeScript
+              </h3>
+              <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                A strongly typed programming language that builds on JavaScript
+                to catch errors early and improve code quality.
+              </p>
+            </div>
+
+            {/* Next.js */}
+            <div className="bg-white p-4 sm:p-5 md:p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+              <h3 className="text-gray-800 font-bold text-base sm:text-lg mb-2 sm:mb-3">
+                Next.js
+              </h3>
+              <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                A React-based framework that supports server-side rendering,
+                routing, and optimized performance for modern web apps.
+              </p>
+            </div>
+
             {/* Figma */}
             <div className="bg-white p-4 sm:p-5 md:p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
               <h3 className="text-gray-800 font-bold text-base sm:text-lg mb-2 sm:mb-3">
